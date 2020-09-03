@@ -1,0 +1,24 @@
+<table class="table">
+    
+    <thead class="thead-dark">
+        <tr>
+            <th>Loan ID</th>
+            <th>Loan Type</th>
+            <th>Loan Term</th>
+            <th>Loan Amount</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <!-- loans should match loan array in loan-list.component.ts-->
+        <tr *ngFor="let tempLoans of loans">
+            <td>{{ tempLoans?.loanId}}  </td>
+            <td>{{ tempLoans?.loaType}}  </td>
+            <td>{{ tempLoans?.loanTerm}}  </td>
+            <td>{{ tempLoans?.loanAmount}}  </td>
+
+        </tr>
+    </tbody>
+
+</table>
+
